@@ -5,7 +5,7 @@ function Github() {
     const data = useLoaderData();
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-300 mt-5 mb-5">
+        <div className="flex justify-center items-center min-h-screen bg-gray-900 mt-5 mb-5 rounded-2xl">
             <div className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden p-6 text-center">
                 <img
                     className="w-32 h-32 mx-auto rounded-full border-4 border-orange-700"
@@ -41,7 +41,7 @@ function Github() {
 export default Github;
 
 export const Githubloader = async () => {
-    const res = await fetch("https://api.github.com/users/Manav948");
+    const res = await fetch("https://api.github.com/users/Manav948z`");
     const data = await res.json();
     return data;
 };
